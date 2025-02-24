@@ -9,6 +9,33 @@
   </head>
   <body>
     <!-- Write yout code here -->
+	      <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button id="C" class="clear" onclick="clearDisplay()">C</button>
+            <button id="op" onclick="appendCharacter('(')">(</button>
+            <button id="cl" onclick="appendCharacter(')')">)</button>
+            <button id="back" onclick="backspace()">&#9003;</button>
+            <button id="7" onclick="appendCharacter('7')">7</button>
+            <button id="8" onclick="appendCharacter('8')">8</button>
+            <button id="9" onclick="appendCharacter('9')">9</button>
+            <button id="divi" class="operator" onclick="appendCharacter('/')">/</button>
+            <button id="4" onclick="appendCharacter('4')">4</button>
+            <button id="5" onclick="appendCharacter('5')">5</button>
+            <button id="6" onclick="appendCharacter('6')">6</button>
+            <button id="*" class="operator" onclick="appendCharacter('*')">*</button>
+            <button id="1" onclick="appendCharacter('1')">1</button>
+            <button id="2" onclick="appendCharacter('2')">2</button>
+            <button id="3" onclick="appendCharacter('3')">3</button>
+            <button id="plus" class="operator" onclick="appendCharacter('+')">+</button>
+            <button id="0" onclick="appendCharacter('0')">0</button>
+            <button id="." onclick="appendCharacter('.')">.</button>
+            <button id="-" class="operator" onclick="appendCharacter('-')">-</button>
+            <button id="equal" class="equal" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+
+
 
     <script src="script.js"></script>
   </body>
